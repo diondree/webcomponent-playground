@@ -1,0 +1,35 @@
+cta-button button {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 16px 1px;
+  border-width: 0;
+}
+
+cta-button img {
+  height: 20px;
+  width: 20px;
+}
+
+.white {
+  color: #fff;
+}
+.green {
+  background-color: #598141;
+}
+
+.green:hover {
+  background-color: #8afd55;
+}
+
+.blue {
+  background-color: #1034a6;
+}
+.blue:hover {
+  background-color: #0080ff;
+}
