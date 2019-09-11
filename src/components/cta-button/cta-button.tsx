@@ -1,14 +1,14 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from "@stencil/core";
 
 @Component({
-  tag: 'cta-button',
-  styleUrl: 'cta-button.css'
+  tag: "cta-button",
+  styleUrl: "cta-button.css"
 })
 export class CtaButton {
   @Prop() buttonText: string;
   @Prop() imageUrl: string;
-  @Prop() color: 'green' | 'blue';
-  @Prop() textColor: 'white';
+  @Prop() color: "green" | "blue";
+  @Prop() textColor: "white";
 
   render() {
     return (
@@ -20,5 +20,13 @@ export class CtaButton {
         {this.imageUrl && <img src={this.imageUrl}></img>}
       </button>
     );
+  }
+}
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "cta-button": CtaButton;
+    }
   }
 }

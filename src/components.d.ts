@@ -11,9 +11,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface CtaButton {
     'buttonText': string;
-    'color': 'green' | 'blue';
+    'color': "green" | "blue";
     'imageUrl': string;
-    'textColor': 'white';
+    'textColor': "white";
   }
   interface MyComponent {
     /**
@@ -54,9 +54,9 @@ declare global {
 declare namespace LocalJSX {
   interface CtaButton extends JSXBase.HTMLAttributes<HTMLCtaButtonElement> {
     'buttonText'?: string;
-    'color'?: 'green' | 'blue';
+    'color'?: "green" | "blue";
     'imageUrl'?: string;
-    'textColor'?: 'white';
+    'textColor'?: "white";
   }
   interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
     /**
